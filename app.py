@@ -4,7 +4,7 @@ from supabase import create_client, Client
 # Initialize connection to Supabase
 def init_connection():
     url = st.secrets["https://jlvgoobmqiadyskzikiy.supabase.co"]
-    key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impsdmdvb2JtcWlhZHlza3ppa2l5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY1MTY1NzUsImV4cCI6MjA2MjA5MjU3NX0.WG1VdaWCb3tsuFqaFadll9TGpODvdTjsxsBS6RYcQQA"]
+    key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impsdmdvb2JtcWlhZHlza3ppa2l5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NjUxNjU3NSwiZXhwIjoyMDYyMDkyNTc1fQ.-cRZq-recXPGVO9tJQ6Jloy78DLEHTxaChqvHmb7y3I"]
     return create_client(url, key)
 
 supabase = init_connection()
